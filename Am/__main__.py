@@ -86,7 +86,10 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """ Hello *{}*, My name is *{}*, a Telegram group management bot. I can help you manage your group and keep it running smoothly. Type /help to learn more about what I can do. And if you want to stay up to date with the latest news and updates, be sure to join my news channel. Thanks for choosing me!
+PM_START_TEXT = """ ʜɪ *{}*, ᴍʏ ɴᴀᴍᴇ ɪs *{}*, ɪ ᴀᴍ ᴀ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ɢʀᴏᴜᴘ 
+ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡʜɪᴄʜ ᴄᴀɴ ʜᴇʟᴘ
+ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴀɴᴅ ꜱᴇᴄᴜʀᴇ ʏᴏᴜʀ 
+ɢʀᴏᴜᴘ ᴡɪᴛʜ ʜᴜɢᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ
 """
 
 
@@ -157,19 +160,19 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup([
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"https://t.me/{context.bot.username}?startgroup=true"),
+            text="⛩ sᴜᴍᴍᴏɴ ᴍᴇ ⛩", url=f"https://t.me/{context.bot.username}?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ᴀᴅᴍɪɴꜱ", callback_data="admin_back"),
+        InlineKeyboardButton(text="ᴘʀᴏ", callback_data="admin_back"),
         InlineKeyboardButton(
             text="ᴜꜱᴇʀꜱ", callback_data="user_back"
         ),
     ],
     [
-        InlineKeyboardButton(text="ᴛᴏᴏʟꜱ", callback_data="tools_back"),
+        InlineKeyboardButton(text="ᴀʙɪʟɪᴛɪᴇs", callback_data="tools_back"),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘꜱ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs❔", callback_data="help_back"),
     ],
 ]),
                 parse_mode=ParseMode.MARKDOWN,
@@ -245,10 +248,10 @@ def Am_about_callback(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup([
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"https://t.me/{context.bot.username}?startgroup=true"),
+            text="⛩ sᴜᴍᴍᴏɴ ᴍᴇ ⛩", url=f"https://t.me/{context.bot.username}?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ᴀᴅᴍɪɴꜱ ", callback_data="admin_back"),
+        InlineKeyboardButton(text="ᴘʀᴏ", callback_data="admin_back"),
         InlineKeyboardButton(
             text="ᴜꜱᴇʀꜱ", callback_data="user_back"
         ),
@@ -260,7 +263,7 @@ def Am_about_callback(update: Update, context: CallbackContext):
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘꜱ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs❔", callback_data="help_back"),
     ],
 ]),
                 parse_mode=ParseMode.MARKDOWN,
